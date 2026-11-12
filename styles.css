@@ -56,3 +56,67 @@ body:not(.variantB) .berry-card h3{font-size:19px}
 body:not(.variantB) .berry-card img{height:120px}
 body:not(.variantB) .note{border-radius:28px;padding:28px}
 }
+
+/* Fairfield Berries visual refresh: real illustration assets, strawberry hero silhouette */
+.variantA .hero-play,.variantB .hero-shop{background:#fff0f3;overflow:hidden;position:relative}
+.hero-play-inner,.hero-shop-inner{display:grid;grid-template-columns:43% 57%;align-items:center;min-height:590px;gap:10px}
+.hero-play-copy,.hero-shop-copy{position:relative;z-index:2;padding:40px 0 48px}
+.hero-play-copy h1,.hero-shop-copy h1{font-size:clamp(43px,5.2vw,73px);color:var(--blue)}
+.hero-play-copy h1 span{color:var(--berry);display:block}
+.hero-play-copy>p:not(.eyebrow),.hero-shop-copy>p:not(.eyebrow){font-size:19px;color:var(--blue);max-width:410px}
+.hero-play-image,.hero-shop-photo{position:relative;display:flex;justify-content:center;align-items:center;padding:10px 0 5px;min-width:0}
+.berry-frame{width:min(100%,600px);height:auto;display:block;filter:drop-shadow(0 12px 10px rgba(83,43,51,.12))}
+.doodle{width:64px;height:64px;object-fit:contain;display:block}
+.hero-sprinkle-one{position:absolute;width:70px;height:70px;right:13%;top:5px;transform:rotate(14deg)}
+.hero-sprinkle-two{position:absolute;width:75px;height:75px;left:3%;bottom:-48px;transform:rotate(-10deg)}
+.floating-fruit{position:absolute;right:2%;bottom:12%;width:78px;height:78px;transform:rotate(10deg)}
+.variantA .hero-play:before{content:"";position:absolute;left:-12%;top:5%;width:60%;height:90%;background:#fff9fa;border-radius:60% 40% 56% 44%/42% 55% 45% 58%}
+.variantA .hero-play:after{content:"";position:absolute;bottom:-22px;left:-5%;right:-5%;height:55px;background:#fff;border-radius:50% 50% 0 0/80% 80% 0 0}
+.variantA .hero-play h1{line-height:1.02}
+.variantA .play-feature{background:linear-gradient(145deg,#fce9ee,#fff6f8);padding:75px 0 68px;border-radius:0 0 48% 50%/0 0 6% 7%}
+.feature-three{display:grid;grid-template-columns:31% 39% 27%;gap:2.5%;align-items:center}
+.circle-photo img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:47% 53% 50% 50%;border:8px solid white}
+.feature-copy h2{color:var(--blue)}
+.feature-copy .subline{font-family:Fredoka,sans-serif;color:var(--berry);font-size:23px;margin:6px 0}
+.feature-copy>p:not(.subline){font-size:15px}
+.feature-copy .btn{margin-top:9px}
+.signpost{width:100%;height:auto;max-height:275px}
+.heading-with-icon{display:flex;align-items:center;justify-content:center;gap:14px}
+.heading-with-icon .doodle{width:50px;height:50px;flex:none}
+.heading-left{justify-content:flex-start}
+.heading-left .doodle{width:70px;height:70px}
+.variantA .berry-grid{margin-top:34px}
+.variantA .berry-card{background:#fbe8ed;border-radius:28px;box-shadow:none}
+.variantA .berry-card img{border-radius:22px}
+.variantA .familyA{border-radius:42% 44% 41% 43%/6% 7% 7% 6%;margin:0;background:#fcebef}
+.variantA .familyA .two-col>div{position:relative}
+.story-barn{width:105px;height:105px;position:absolute;right:0;top:-75px}
+.variantA .note{border-radius:40px}
+.variantA .gallery img{border-radius:26px}
+.variantB .hero-shop{background:linear-gradient(115deg,#fff2f5,#fff)}
+.variantB .hero-shop h1{font-size:clamp(39px,4.5vw,65px)}
+.farm-side{width:130px;height:130px;margin:15px auto 0 0}
+.shop-berry{position:absolute;right:0;bottom:7%;width:76px;height:76px}
+.variantB .season-blue{background:var(--blue);color:white;padding:21px 0;border-radius:0 0 20px 20px}
+.season-heading{display:flex;align-items:center;justify-content:center;gap:35px;text-align:center}
+.season-heading .doodle{width:64px;height:64px;filter:grayscale(1) brightness(0) invert(1)}
+.season-heading h2{color:white;font-size:42px}
+.season-heading p{margin:5px 0 0;font-size:14px}
+.variantB .btn{border-radius:17px}
+.variantB .b-card,.variantB .b-card img{border-radius:22px}
+.variantB .b-card{overflow:hidden}
+.variantB .b-card div a{color:var(--green);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.variantB .b-feature img,.variantB .b-bottom img{border-radius:25px}
+.variantB .footer{background:var(--berry)}
+.variantB .b-bottom{background:var(--blue)}
+.inline-icon{width:70px;height:70px;margin-bottom:12px}
+.visit-sign{width:120px;height:120px;margin-bottom:8px}
+.footer{background:var(--berry)!important}
+.footer .container{min-height:88px}
+.footer-logo{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:12px;padding:3px 10px;margin-left:0!important;width:182px;height:74px;overflow:hidden}
+.footer-logo img{width:172px;height:64px;object-fit:contain}
+.footer nav{display:flex;gap:18px;flex-wrap:wrap}
+.footer nav a{margin:0}
+.footer small{font-size:12px;opacity:.9}
+@media(max-width:850px){.hero-play-inner,.hero-shop-inner{grid-template-columns:1fr;gap:0}.hero-play-copy,.hero-shop-copy{padding:46px 0 5px}.hero-play-image,.hero-shop-photo{max-width:550px;margin:0 auto}.hero-sprinkle-one{right:10%;top:1%}.hero-sprinkle-two{bottom:-15px}.feature-three{grid-template-columns:38% 58%;gap:4%}.signpost{display:none}.story-barn{position:static;margin-bottom:8px}.variantA .hero-play:before{width:110%}.variantA .footer .container{align-items:flex-start}}
+@media(max-width:520px){.hero-play-copy h1,.hero-shop-copy h1{font-size:47px}.hero-play-copy>p:not(.eyebrow),.hero-shop-copy>p:not(.eyebrow){font-size:17px}.hero-play-image,.hero-shop-photo{margin:0 -14px}.feature-three{grid-template-columns:1fr}.circle-photo{max-width:300px;margin:auto}.feature-copy{text-align:center}.heading-with-icon{gap:4px}.heading-with-icon .doodle{width:36px;height:36px}.season-heading{gap:10px}.season-heading .doodle{width:35px;height:35px}.season-heading h2{font-size:31px}.footer .container{gap:16px}.footer-logo{width:175px}}
