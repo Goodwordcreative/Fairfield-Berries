@@ -17,3 +17,26 @@
 .option-a .offer-copy a{font-size:13px}
 @media(max-width:720px){.option-a .offer-grid{gap:20px 14px}.option-a .offer-photo{border-width:5px}}
 @media(max-width:460px){.option-a .offer-copy{padding:12px 2px}.option-a .offer-copy h3{font-size:19px}.option-a .offer-copy p{min-height:0;font-size:12px}}
+
+/* Summer palette refinement — bright yet photograph-led, November 2026 */
+:root{--red:#b72d50;--blue:#436b91;--green:#4d8a52;--pink:#ffe2ec}
+.option-a .hero-a{background:linear-gradient(115deg,#fff7f9 0%,#ffe5ec 55%,#fff4f2 100%)}
+.option-a .hero-decor{opacity:.25}
+.option-a .offerings{background:linear-gradient(180deg,#fff 0%,#fff8f9 100%)}
+.option-a .offerings .section-heading h2,.option-b .offerings .section-heading h2{color:var(--blue)}
+.option-a .offer-photo{border-color:#ffcbdc;background:#ffcbdc}
+.option-a .offer-card:nth-child(2) .offer-photo{border-color:#dfedce;background:#dfedce}
+.option-a .offer-card:nth-child(3) .offer-photo{border-color:#ffcada;background:#ffcada}
+.option-a .offer-card:nth-child(4) .offer-photo{border-color:#dbe8f3;background:#dbe8f3}
+.option-a .offer-copy h3{color:var(--red)}
+.option-a .feature-a{background:#ffe7ee}
+.option-a .duo-section{background:#fffdfb}
+.option-a .shop-story{background:#fff0f3}
+.option-b .offerings{background:#fffbfa}
+.option-b .offer-card{background:#fff4f7;border-color:#f4d5df;box-shadow:0 8px 22px #9f315412}
+.option-b .offer-card:nth-child(2){background:#f2f8ee;border-color:#d5e7cd}
+.option-b .offer-card:nth-child(3){background:#fff1f3;border-color:#f3cddb}
+.option-b .offer-card:nth-child(4){background:#f1f5fb;border-color:#d5e2f1}
+.option-b .blue-band{background:var(--blue)}
+.option-b .feature-b{background:#f2f8ed}
+.offer-copy a{color:#347548}
