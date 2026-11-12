@@ -4,3 +4,16 @@
 @media(max-width:950px){.offer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-scroller figure{flex-basis:calc((100% - 28px)/3)!important}.site-nav{gap:15px}}
 @media(max-width:720px){.wrap{width:calc(100% - 34px)}.header-inner{height:78px}.site-logo{width:151px;height:65px}.site-logo img{width:285px;height:285px;left:-63px;top:-109px}.menu-toggle{display:block}.site-nav{display:none;position:absolute;top:78px;left:0;right:0;padding:18px 22px 25px;background:#fff;box-shadow:0 18px 25px #0002;flex-direction:column;align-items:start}.site-nav.open{display:flex}.hero-a-grid,.feature-grid,.duo-grid,.shop-story-grid,.story-split,.b-feature-pair{grid-template-columns:1fr}.hero-a-grid{padding-top:24px}.hero-copy{padding:16px 0 12px}.hero-copy h1{font-size:48px}.hero-copy p{font-size:17px}.hero-a-image{width:min(350px,86vw);height:auto;aspect-ratio:1;border-radius:50%;transform:none;margin:15px auto 34px}.hero-a-image img{transform:none;object-position:center 75%}.feature-a{border-radius:25px;padding:45px 0}.feature-photo img{height:260px}.duo-section{padding:44px 0}.duo-picture img{height:230px}.shop-story{padding:45px 0}.hero-b{height:485px}.hero-b-content h1{font-size:49px}.hero-b-content p{font-size:17px}.blue-band .wrap{flex-wrap:wrap}.gallery-scroller figure{flex-basis:calc((100% - 14px)/2)!important;height:180px!important;max-height:180px}.gallery-scroller figure img{max-height:180px!important}.footer-inner{flex-wrap:wrap}}
 @media(max-width:460px){.offer-grid{gap:10px}.offer-copy{padding:15px 11px}.offer-copy h3{font-size:19px}.offer-copy p{font-size:12px;min-height:58px}.hero-copy h1{font-size:44px}.section{padding:48px 0}.gallery-scroller figure{flex:0 0 82%!important;height:225px!important;max-height:225px}.gallery-scroller figure img{max-height:225px!important}.review-grid{gap:9px}.review-card{padding:19px 10px}.review-number{font-size:35px}.starline{font-size:17px;letter-spacing:0}.review-source{font-size:13px}.review-card p{font-size:11px}.carousel-controls button{height:36px;width:36px}.hero-b-content h1{font-size:43px}.b-feature-pair article>div{height:200px}}
+
+/* Fairfield Option A: four primary offerings in the original soft oval-photo layout */
+.option-a .offerings .section-heading h2{color:var(--blue)}
+.option-a .offer-grid{gap:20px;text-align:center}
+.option-a .offer-card{background:transparent;box-shadow:none;border:0;border-radius:0;overflow:visible}
+.option-a .offer-photo{width:100%;aspect-ratio:1.37;border:7px solid #fce0e8;border-radius:50%;overflow:hidden;background:#fce0e8}
+.option-a .offer-photo img{width:100%;height:100%;object-fit:cover}
+.option-a .offer-copy{padding:17px 5px 10px}
+.option-a .offer-copy h3{color:var(--red);font-size:clamp(19px,2vw,25px)}
+.option-a .offer-copy p{min-height:0;font-size:14px;margin:8px 0 8px}
+.option-a .offer-copy a{font-size:13px}
+@media(max-width:720px){.option-a .offer-grid{gap:20px 14px}.option-a .offer-photo{border-width:5px}}
+@media(max-width:460px){.option-a .offer-copy{padding:12px 2px}.option-a .offer-copy h3{font-size:19px}.option-a .offer-copy p{min-height:0;font-size:12px}}
