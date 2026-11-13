@@ -125,3 +125,31 @@
 .option-a .offerings .wrap > *,.option-a .focus-pyo .wrap > *,.option-a .focus-shop .wrap > *{position:relative;z-index:1}
 @media(max-width:850px){.story-layout{grid-template-columns:1fr 1fr;gap:18px}.story-text{grid-column:1/-1;grid-row:1;text-align:center;padding:0 12px 8px}.story-photo img,.story-farm-photo img{height:260px}.option-a .story-section .wrap::after{display:none}}
 @media(max-width:540px){.story-section{padding:42px 0}.story-layout{gap:12px}.story-photo img,.story-farm-photo img{height:195px}.story-text h2{font-size:34px}.story-text p{font-size:14px}.option-a .offerings .wrap::before{left:0;top:-18px;width:34px;height:34px}.option-a .focus-pyo .wrap::before,.option-a .focus-shop .wrap::after{width:34px;height:34px;right:5px;top:-22px}}
+
+/* Fairfield refinements: centred story and clean rounded photography */
+.story-text{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.story-text p{margin-left:auto;margin-right:auto}
+.option-b .story-section{background:#edf3f7}
+.option-a .hero-a-image{border-radius:30px;transform:none;overflow:hidden}
+.option-a .hero-a-image img{transform:none;object-position:center 65%;height:100%;width:100%;object-fit:cover}
+.option-a .story-photo,.option-a .story-farm-photo{border-radius:26px;border:5px solid #fff}
+.option-a .story-photo img,.option-a .story-farm-photo img{border-radius:20px}
+.option-a .story-farm-photo{display:block;visibility:visible}
+.option-a .story-farm-photo img{display:block;visibility:visible;opacity:1}
+
+/* Soft line illustrations using existing Fairfield artwork, in quiet negative spaces */
+.option-a .hero-copy,.option-a .offerings .wrap,.option-a .story-section .wrap,.option-a .focus-gallery .wrap,.option-a .visit-simple .wrap{position:relative}
+.option-a .brand-doodle{position:absolute;display:block;pointer-events:none;background-position:center;background-size:contain;background-repeat:no-repeat;mix-blend-mode:multiply;opacity:.23;z-index:0}
+.option-a .doodle-hero-blue{width:60px;height:60px;left:62%;top:22px;background-image:url('public/images/icon%20blue%20berry.png')}
+.option-a .doodle-offer-black{width:57px;height:57px;right:5%;top:0;background-image:url('public/images/icon-berry.png')}
+.option-a .doodle-story-blue{width:42px;height:42px;right:0;top:-46px;background-image:url('public/images/icon%20blue%20berry.png')}
+.option-a .doodle-pyo-black{width:54px;height:54px;left:56%;top:-38px;background-image:url('public/images/icon-1berry.png')}
+.option-a .doodle-shop-straw{width:60px;height:60px;left:55%;top:-38px;background-image:url('public/images/icon-berry-strawberry.png')}
+.option-a .doodle-visit-ice{width:51px;height:51px;right:9%;top:-19px;background-image:url('public/images/icon-icecream.png')}
+.option-a .hero-decor{background-image:url('public/images/icon-berry-strawberry.png')}
+.option-a .offerings .wrap::before{background-image:url('public/images/icon%20blue%20berry.png');top:15px}
+.option-a .story-section .wrap::after{background-image:url('public/images/icon-1berry.png');right:32%;bottom:-22px}
+.option-a .focus-pyo .wrap::before{background-image:url('public/images/icon-berry.png')}
+.option-a .focus-shop .wrap::after{background-image:url('public/images/icon-icecream.png')}
+@media(max-width:850px){.story-text{text-align:center}.option-a .doodle-story-blue{right:12px;top:-15px}}
+@media(max-width:540px){.option-a .hero-a-image{border-radius:22px}.option-a .doodle-hero-blue{width:33px;height:33px;left:auto;right:8px;top:-3px}.option-a .doodle-offer-black{width:32px;height:32px;right:2%;top:-18px}.option-a .doodle-pyo-black,.option-a .doodle-shop-straw{width:32px;height:32px;left:60%;top:-20px}.option-a .doodle-visit-ice{width:35px;height:35px;right:3%;top:-13px}.option-a .story-photo,.option-a .story-farm-photo{border-radius:18px;border-width:3px}.option-a .story-photo img,.option-a .story-farm-photo img{border-radius:15px}}
