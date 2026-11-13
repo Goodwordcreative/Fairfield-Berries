@@ -199,3 +199,70 @@
 .option-a .story-text .doodle-story-blue{width:42px;height:42px;bottom:-26px;right:0}
 .option-a .visit-simple .doodle-visit-ice{width:42px;height:42px;right:0;top:50%}
 }
+
+/* Option A: icon placements mapped to the six marked-up screenshots */
+.option-a .hero-a,.option-a .offerings,.option-a .story-section,.option-a .focus-pyo,.option-a .focus-shop,.option-a .visit-simple{position:relative;isolation:isolate}
+.option-a .brand-doodle,.option-a .hero-decor{display:none!important}
+.option-a .offerings .wrap::before,.option-a .story-section .wrap::after,.option-a .focus-pyo .wrap::before,.option-a .focus-shop .wrap::after{content:none!important}
+.option-a .art-icon{display:block;position:absolute;width:67px;height:67px;background-position:center;background-repeat:no-repeat;background-size:contain;opacity:.24;mix-blend-mode:multiply;pointer-events:none;z-index:1}
+.option-a .art-blue{background-image:url('public/images/icon%20blue%20berry.png')}
+.option-a .art-straw{background-image:url('public/images/icon-berry-strawberry.png')}
+.option-a .art-black{background-image:url('public/images/icon-berry.png')}
+.option-a .art-rasp{background-image:url('public/images/icon-1berry.png')}
+.option-a .art-ice{background-image:url('public/images/icon-icecream.png')}
+
+/* Leave the photos and main copy visually above the decorative layer */
+.option-a .hero-a .wrap,.option-a .offerings .wrap,.option-a .story-section .wrap,.option-a .focus-gallery .wrap,.option-a .visit-simple .wrap{position:relative;z-index:2}
+
+/* Icon positions deliberately occupy the blank edges, not the copy or photographs */
+.option-a .art-hero-top{left:38%;top:6%;width:78px;height:78px}
+.option-a .art-hero-middle{left:40%;top:44%;width:57px;height:57px}
+.option-a .art-hero-low{left:37%;bottom:12%;width:70px;height:70px}
+.option-a .art-offer-left{left:11%;top:4%;width:65px;height:65px}
+.option-a .art-offer-right{right:7%;top:10%;width:72px;height:72px}
+.option-a .art-story-top{left:57%;top:6%;width:57px;height:57px}
+.option-a .art-story-low{left:57%;bottom:5%;width:70px;height:70px}
+.option-a .art-pyo-left{left:1%;top:4%;width:66px;height:66px}
+.option-a .art-pyo-top{left:47%;top:7%;width:76px;height:76px}
+.option-a .art-pyo-right{right:7%;bottom:8%;width:73px;height:73px}
+.option-a .art-shop-left{left:8%;top:3%;width:73px;height:73px}
+.option-a .art-shop-low{left:24%;bottom:5%;width:67px;height:67px}
+.option-a .art-shop-right{right:12%;bottom:5%;width:67px;height:67px}
+.option-a .art-visit-left{left:13%;top:22%;width:74px;height:74px}
+.option-a .art-visit-right{right:12%;top:23%;width:69px;height:69px}
+
+/* Tighten previously oversized vertical gaps while keeping comfortable rhythm */
+.option-a .hero-a-grid{min-height:0;padding-top:24px;padding-bottom:36px}
+.option-a .hero-copy{padding-top:42px;padding-bottom:42px}
+.option-a .hero-a::after{bottom:-45px;height:60px}
+.option-a .offerings{padding-top:47px;padding-bottom:49px}
+.option-a .offerings .section-heading{margin-bottom:22px}
+.option-a .story-section{padding-top:42px;padding-bottom:42px}
+.option-a .focus-gallery{padding-top:48px;padding-bottom:44px}
+.option-a .focus-heading{margin-bottom:20px}
+.option-a .visit-simple{padding-top:35px;padding-bottom:38px}
+@media(max-width:1100px){.option-a .art-icon{width:46px!important;height:46px!important;opacity:.19}.option-a .art-hero-top{left:42%;top:4%}.option-a .art-hero-middle{left:40%;top:48%}.option-a .art-hero-low{left:40%;bottom:8%}}
+@media(max-width:720px){
+.option-a .hero-a-grid{padding-top:16px;padding-bottom:35px}
+.option-a .hero-copy{padding-top:18px;padding-bottom:16px}
+.option-a .offerings{padding-top:45px;padding-bottom:42px}
+.option-a .story-section{padding-top:37px;padding-bottom:39px}
+.option-a .focus-gallery{padding-top:40px;padding-bottom:38px}
+.option-a .visit-simple{padding-top:32px;padding-bottom:35px}
+.option-a .art-icon{width:37px!important;height:37px!important;opacity:.17}
+.option-a .art-hero-top{left:auto;right:9%;top:4%}
+.option-a .art-hero-middle{left:auto;right:4%;top:31%}
+.option-a .art-hero-low{display:none}
+.option-a .art-offer-left{left:3%;top:1%}
+.option-a .art-offer-right{right:3%;top:2%}
+.option-a .art-story-top{left:auto;right:5%;top:5%}
+.option-a .art-story-low{display:none}
+.option-a .art-pyo-left{left:3%;top:2%}
+.option-a .art-pyo-top{right:7%;left:auto;top:2%}
+.option-a .art-pyo-right{display:none}
+.option-a .art-shop-left{left:3%;top:2%}
+.option-a .art-shop-low{display:none}
+.option-a .art-shop-right{right:5%;top:2%;bottom:auto}
+.option-a .art-visit-left{left:2%;top:12%}
+.option-a .art-visit-right{right:3%;top:13%}
+}
