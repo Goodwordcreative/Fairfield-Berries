@@ -97,3 +97,31 @@
 .option-b .story-photo{border-radius:14px}
 .focus-shop .focus-track figure:first-child img{object-position:center 54%}
 @media(max-width:720px){.story-photo{max-width:420px}.story-photo img{height:280px}}
+
+/* 2026-11-13 — balanced farm story and understated brand illustration details */
+.story-section{padding:48px 0}
+.story-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.94fr) minmax(0,1.06fr);gap:24px;align-items:center}
+.story-photo,.story-farm-photo{margin:0;width:100%;max-width:none;overflow:hidden;background:#fff5f7}
+.story-photo img,.story-farm-photo img{display:block;width:100%;height:275px;object-fit:cover}
+.story-photo img{object-position:center 32%}
+.story-farm-photo img{object-position:center center}
+.story-farm-photo{border-radius:24px}
+.story-text{padding:0 4px}
+.story-text h2{font-size:clamp(29px,3vw,42px);margin:8px 0 14px}
+.story-text p{font-size:15px;line-height:1.5;margin:0 0 12px}
+.story-text .story-note{font-size:12px}
+.option-a .story-photo{border-radius:36% 58% 43% 55%/40% 45% 52% 57%;border:5px solid white}
+.option-a .story-farm-photo{border-radius:46% 54% 41% 59%/48% 39% 61% 52%;border:5px solid white}
+.option-a .story-section{position:relative;background:#fff9f7}
+.option-b .story-photo,.option-b .story-farm-photo{border-radius:15px}
+
+/* Small brand fruit illustrations that sit within the page backgrounds, not boxed stickers */
+.option-a .offerings .wrap,.option-a .story-section .wrap,.option-a .focus-pyo .wrap,.option-a .focus-shop .wrap{position:relative}
+.option-a .offerings .wrap::before,.option-a .story-section .wrap::after,.option-a .focus-pyo .wrap::before,.option-a .focus-shop .wrap::after{content:"";position:absolute;pointer-events:none;background-position:center;background-size:contain;background-repeat:no-repeat;opacity:.17;mix-blend-mode:multiply;z-index:0}
+.option-a .offerings .wrap::before{width:55px;height:55px;top:5px;left:5px;background-image:url('public/images/icon-berry-strawberry.png');transform:rotate(-15deg)}
+.option-a .story-section .wrap::after{width:53px;height:53px;right:38%;bottom:-25px;background-image:url('public/images/icon-berry-strawberry.png');transform:rotate(14deg)}
+.option-a .focus-pyo .wrap::before{width:57px;height:57px;top:-28px;right:105px;background-image:url('public/images/icon-berry-strawberry.png');transform:rotate(16deg)}
+.option-a .focus-shop .wrap::after{width:60px;height:60px;top:-28px;right:100px;background-image:url('public/images/icon-icecream.png');transform:rotate(-9deg)}
+.option-a .offerings .wrap > *,.option-a .focus-pyo .wrap > *,.option-a .focus-shop .wrap > *{position:relative;z-index:1}
+@media(max-width:850px){.story-layout{grid-template-columns:1fr 1fr;gap:18px}.story-text{grid-column:1/-1;grid-row:1;text-align:center;padding:0 12px 8px}.story-photo img,.story-farm-photo img{height:260px}.option-a .story-section .wrap::after{display:none}}
+@media(max-width:540px){.story-section{padding:42px 0}.story-layout{gap:12px}.story-photo img,.story-farm-photo img{height:195px}.story-text h2{font-size:34px}.story-text p{font-size:14px}.option-a .offerings .wrap::before{left:0;top:-18px;width:34px;height:34px}.option-a .focus-pyo .wrap::before,.option-a .focus-shop .wrap::after{width:34px;height:34px;right:5px;top:-22px}}
