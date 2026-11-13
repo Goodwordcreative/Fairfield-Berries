@@ -153,3 +153,49 @@
 .option-a .focus-shop .wrap::after{background-image:url('public/images/icon-icecream.png')}
 @media(max-width:850px){.story-text{text-align:center}.option-a .doodle-story-blue{right:12px;top:-15px}}
 @media(max-width:540px){.option-a .hero-a-image{border-radius:22px}.option-a .doodle-hero-blue{width:33px;height:33px;left:auto;right:8px;top:-3px}.option-a .doodle-offer-black{width:32px;height:32px;right:2%;top:-18px}.option-a .doodle-pyo-black,.option-a .doodle-shop-straw{width:32px;height:32px;left:60%;top:-20px}.option-a .doodle-visit-ice{width:35px;height:35px;right:3%;top:-13px}.option-a .story-photo,.option-a .story-farm-photo{border-radius:18px;border-width:3px}.option-a .story-photo img,.option-a .story-farm-photo img{border-radius:15px}}
+
+/* Layout polish: balanced illustrations and cleaner section transitions */
+.option-a .hero-a-grid{padding-bottom:65px;min-height:575px}
+.option-a .hero-a-image{position:relative;z-index:2;margin-bottom:0}
+.option-a .hero-a::after{bottom:-42px;height:68px;z-index:1}
+.option-a .hero-copy{padding-top:68px;padding-bottom:64px}
+.option-a .offerings{padding-top:76px;padding-bottom:76px}
+.option-a .story-section{padding-top:64px;padding-bottom:64px}
+.option-a .focus-gallery{padding-top:76px;padding-bottom:76px}
+.option-a .visit-simple{padding-top:58px;padding-bottom:58px}
+.option-a .brand-doodle{width:76px;height:76px;opacity:.21;transform:none;z-index:0}
+.option-a .hero-copy .doodle-hero-blue{left:auto;right:3%;top:49%;transform:translateY(-50%);width:73px;height:73px}
+.option-a .hero-copy .hero-decor{width:80px;height:80px;top:13%;right:4%;opacity:.18}
+.option-a .offerings .doodle-offer-black{width:76px;height:76px;top:51%;right:-82px;transform:translateY(-50%)}
+.option-a .story-text .doodle-story-blue{width:66px;height:66px;top:auto;bottom:-56px;right:-8px}
+.option-a .focus-pyo .doodle-pyo-black{width:76px;height:76px;top:52%;left:-84px;transform:translateY(-50%)}
+.option-a .focus-shop .doodle-shop-straw{width:76px;height:76px;top:50%;left:auto;right:-84px;transform:translateY(-50%)}
+.option-a .visit-simple .doodle-visit-ice{width:74px;height:74px;top:50%;right:3%;transform:translateY(-50%)}
+.option-a .offerings .wrap::before,.option-a .story-section .wrap::after,.option-a .focus-pyo .wrap::before,.option-a .focus-shop .wrap::after{content:none}
+.option-a .offerings .section-heading,.option-a .focus-gallery .focus-heading,.option-a .visit-simple h2{position:relative;z-index:1}
+@media(max-width:1250px){
+.option-a .offerings .doodle-offer-black,.option-a .focus-shop .doodle-shop-straw{right:0}
+.option-a .focus-pyo .doodle-pyo-black{left:0}
+.option-a .offerings .doodle-offer-black{top:8%}
+.option-a .focus-pyo .doodle-pyo-black,.option-a .focus-shop .doodle-shop-straw{top:8%;transform:none}
+}
+@media(max-width:850px){
+.option-a .hero-a-grid{padding-bottom:65px;min-height:0}
+.option-a .brand-doodle{width:55px;height:55px}
+.option-a .hero-copy .doodle-hero-blue{width:54px;height:54px;right:0;top:52%}
+.option-a .offerings .doodle-offer-black,.option-a .focus-pyo .doodle-pyo-black,.option-a .focus-shop .doodle-shop-straw{width:49px;height:49px;top:0;right:0;left:auto}
+.option-a .story-text .doodle-story-blue{width:46px;height:46px;right:0;bottom:-38px}
+}
+@media(max-width:540px){
+.option-a .hero-a-grid{padding-bottom:68px}
+.option-a .hero-a::after{bottom:-42px;height:64px}
+.option-a .hero-a-image{margin-bottom:0}
+.option-a .hero-copy{padding-bottom:24px}
+.option-a .offerings,.option-a .focus-gallery{padding-top:58px;padding-bottom:58px}
+.option-a .story-section{padding-top:52px;padding-bottom:52px}
+.option-a .hero-copy .hero-decor{width:46px;height:46px;right:0;top:0}
+.option-a .hero-copy .doodle-hero-blue{width:48px;height:48px;right:0;top:70%}
+.option-a .offerings .doodle-offer-black,.option-a .focus-pyo .doodle-pyo-black,.option-a .focus-shop .doodle-shop-straw{width:46px;height:46px;top:0;right:4px;left:auto;transform:none}
+.option-a .story-text .doodle-story-blue{width:42px;height:42px;bottom:-26px;right:0}
+.option-a .visit-simple .doodle-visit-ice{width:42px;height:42px;right:0;top:50%}
+}
