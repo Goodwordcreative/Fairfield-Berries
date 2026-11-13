@@ -266,3 +266,49 @@
 .option-a .art-visit-left{left:2%;top:12%}
 .option-a .art-visit-right{right:3%;top:13%}
 }
+
+/* Revised icon composition — larger artwork in genuine negative space.
+   Keep blue berry artwork unused pending a better illustration. */
+@media(min-width:1101px){
+.option-a .art-icon{width:124px!important;height:124px!important;opacity:.27;mix-blend-mode:multiply}
+.option-a .art-hero-top{left:43%;top:1%;width:105px!important;height:105px!important}
+.option-a .art-hero-middle{left:39%;top:auto;bottom:1%;width:112px!important;height:112px!important}
+.option-a .art-hero-low{display:none}
+.option-a .art-offer-left{left:1%;top:2%;width:110px!important;height:110px!important}
+.option-a .art-offer-right{right:1%;top:2%;width:112px!important;height:112px!important}
+.option-a .art-story-top{left:47%;top:0;width:104px!important;height:104px!important}
+.option-a .art-story-low{display:none}
+.option-a .art-pyo-left{left:1%;top:1%;width:106px!important;height:106px!important}
+.option-a .art-pyo-top{left:53%;top:1%;width:118px!important;height:118px!important}
+.option-a .art-pyo-right{display:none}
+.option-a .art-shop-left{left:2%;top:1%;width:118px!important;height:118px!important}
+.option-a .art-shop-low{display:none}
+.option-a .art-shop-right{right:11%;top:0;bottom:auto;width:110px!important;height:110px!important}
+.option-a .art-visit-left{left:3%;top:16%;width:110px!important;height:110px!important}
+.option-a .art-visit-right{right:3%;top:16%;width:110px!important;height:110px!important}
+}
+@media(min-width:721px) and (max-width:1100px){
+.option-a .art-icon{width:82px!important;height:82px!important;opacity:.24}
+.option-a .art-hero-top{left:45%;top:1%}
+.option-a .art-hero-middle{left:43%;top:auto;bottom:0}
+.option-a .art-hero-low,.option-a .art-story-low,.option-a .art-pyo-right,.option-a .art-shop-low{display:none}
+.option-a .art-offer-left{left:1%;top:0}
+.option-a .art-offer-right{right:1%;top:0}
+.option-a .art-story-top{left:46%;top:0}
+.option-a .art-pyo-left{left:0;top:0}
+.option-a .art-pyo-top{left:55%;top:0}
+.option-a .art-shop-left{left:0;top:0}
+.option-a .art-shop-right{right:12%;top:0;bottom:auto}
+.option-a .art-visit-left{left:1%;top:12%}
+.option-a .art-visit-right{right:1%;top:12%}
+}
+/* On narrow screens omit art where no safe negative space exists. */
+@media(max-width:720px){
+.option-a .art-icon{display:none!important}
+.option-a .art-offer-left,.option-a .art-story-top,.option-a .art-pyo-top,.option-a .art-shop-left{display:block!important;width:62px!important;height:62px!important;opacity:.2;left:auto;right:3%;top:0;bottom:auto}
+.option-a .art-offer-left{top:0}
+.option-a .art-story-top{top:0;right:0}
+.option-a .art-pyo-top{top:0;right:1%}
+.option-a .art-shop-left{top:0;right:1%}
+.option-a .offerings .section-heading,.option-a .focus-gallery .focus-heading{padding-top:14px}
+}
