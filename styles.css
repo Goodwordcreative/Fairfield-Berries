@@ -88,3 +88,12 @@
 @media(max-width:950px){.focus-track figure{flex-basis:calc((100% - 34px)/3)!important}}
 @media(max-width:720px){.story-section{padding:50px 0}.story-layout{grid-template-columns:1fr;gap:23px}.story-image-placeholder{min-height:210px}.focus-gallery{padding:45px 0}.focus-track figure{flex-basis:calc((100% - 17px)/2)!important;height:210px!important;max-height:210px}.focus-track figure img{max-height:210px!important}}
 @media(max-width:460px){.focus-heading{align-items:center;gap:8px}.focus-heading p{font-size:13px}.focus-controls button{height:36px;width:36px;font-size:19px}.focus-track figure{flex:0 0 84%!important;height:235px!important;max-height:235px}.focus-track figure img{max-height:235px!important}.focus-gallery{padding:42px 0}.story-image-placeholder span{font-size:25px}}
+
+/* Actual photos: portrait and ice cream preparation */
+.story-photo{margin:0;position:relative;border-radius:24px;overflow:hidden;background:#fff5f7;max-width:480px}
+.story-photo img{display:block;width:100%;height:320px;object-fit:cover;object-position:center 43%}
+.story-photo figcaption{position:absolute;bottom:12px;left:12px;background:rgba(255,255,255,.92);border-radius:99px;padding:8px 14px;color:#923252;font-size:12px;font-weight:700}
+.option-a .story-photo{border-radius:40% 57% 45% 52%/33% 43% 57% 64%;border:6px solid #fff}
+.option-b .story-photo{border-radius:14px}
+.focus-shop .focus-track figure:first-child img{object-position:center 54%}
+@media(max-width:720px){.story-photo{max-width:420px}.story-photo img{height:280px}}
