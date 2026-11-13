@@ -148,3 +148,16 @@ body{overflow-x:hidden}
 .gallery-head{align-items:center}.gallery-head h2{font-size:31px}.map-frame{height:340px}
 }
 @media(max-width:430px){.detail-nav strong{font-size:16px}.detail-nav img{height:110px}.site-header .site-logo{transform:translateX(-50%) scale(.86)}}
+
+/* Final brand-illustration treatment: the supplied Fairfield berry artwork */
+.option-a .art-rasp{background-image:url("public/images/raspberry-logo-art.svg")}
+.option-a .art-straw{background-image:url("public/images/strawberry-logo-art.svg")}
+.option-a .art-black{background-image:url("public/images/boysenberry-logo-art.svg")}
+.option-a .art-blue{background-image:url("public/images/blueberry-logo-art.svg")}
+.option-a .art-icon{opacity:.16}
+.page-decor{display:none}
+@media(min-width:1450px){.page-decor{display:block}}
+@media(max-width:900px){.site-nav .nav-social{width:auto;height:auto}}
+/* Do not let the enlarged Instagram panel feel like a placeholder icon */
+.social-panel .social-icon svg{width:54px;height:54px;fill:#c12e54;display:block;margin:0 auto}
+.social-panel .social-icon{height:54px;margin:0 auto 12px}
