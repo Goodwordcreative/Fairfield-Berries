@@ -40,3 +40,51 @@
 .option-b .blue-band{background:var(--blue)}
 .option-b .feature-b{background:#f2f8ed}
 .offer-copy a{color:#347548}
+
+/* Updated information architecture, swipeable galleries and summer styling */
+:root{--red:#c12e54;--blue:#436b91;--green:#4f9857;--pink:#ffe5ed}
+.option-a .offerings{background:linear-gradient(180deg,#fffaf9,#fff3f7)}
+.option-a .offer-photo{border-color:#ffbfd3}
+.option-a .offer-card:nth-child(2) .offer-photo{border-color:#d5edba}
+.option-a .offer-card:nth-child(3) .offer-photo{border-color:#ffd2dd}
+.option-a .offer-card:nth-child(4) .offer-photo{border-color:#cfe3f5}
+.offer-photo img{object-position:center center}
+.offer-photo.icecream-photo img{object-position:center 43%}
+.option-a .hero-a{background:linear-gradient(120deg,#fff7fa,#ffe2eb)}
+.story-section{padding:66px 0;background:#fff}
+.story-layout{display:grid;grid-template-columns:38% 1fr;gap:60px;align-items:center}
+.story-image-placeholder{min-height:250px;border:2px dashed #e9b7c8;background:#fff3f6;color:#ad3656;border-radius:26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:22px;transform:rotate(-1deg)}
+.story-image-placeholder span{font:600 29px Fredoka,sans-serif}
+.story-image-placeholder small{font-size:12px;color:#7e5f68;max-width:240px}
+.story-text h2{margin:11px 0 18px}
+.story-text p{max-width:550px}
+.story-note{font-size:13px;color:#777}
+.option-a .story-section{background:#fffaf8}
+.option-b .story-section{background:#faf9f5}
+.option-b .story-image-placeholder{transform:none;border-radius:14px}
+.focus-gallery{padding:70px 0;background:#fff}
+.focus-pyo{background:#ffebf1}
+.focus-shop{background:#f2f7ee}
+.focus-heading{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:25px}
+.focus-heading h2{margin:8px 0 8px;font-size:clamp(30px,3.7vw,49px)}
+.focus-heading p{margin:0;max-width:590px;font-size:15px}
+.focus-controls{display:flex;gap:9px;flex-shrink:0}
+.focus-controls button{width:44px;height:44px;border-radius:50%;border:2px solid var(--red);background:#fff;color:var(--red);font-size:23px;font-weight:700}
+.focus-controls button:hover{background:var(--red);color:#fff}
+.focus-track{display:flex!important;flex-flow:row nowrap!important;gap:17px;overflow-x:auto!important;overflow-y:hidden!important;scroll-behavior:smooth;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;padding:4px 0 15px;scrollbar-width:thin;scrollbar-color:#ddb8c3 transparent}
+.focus-track figure{flex:0 0 calc((100% - 51px)/4)!important;margin:0!important;min-width:0!important;height:220px!important;max-height:220px;overflow:hidden;border-radius:22px;scroll-snap-align:start}
+.focus-track figure img{height:100%!important;max-height:220px!important;width:100%!important;object-fit:cover!important;display:block}
+.focus-hint{font-size:12px;color:#777;margin:8px 0 0}
+.option-a .focus-track figure{border-radius:30px}
+.option-b .focus-pyo{background:#f8f7f4}
+.option-b .focus-shop{background:#edf3f7}
+.option-b .focus-track figure{border-radius:13px}
+.option-b .focus-controls button{border-radius:12px}
+.visit-simple{padding:42px 0;background:#fff;text-align:center}
+.visit-simple h2{font-size:34px}
+.visit-simple p{font-size:14px;margin:10px 0 0}
+.option-a .visit-simple{background:#fff8fa}
+.option-b .visit-simple{background:#fff}
+@media(max-width:950px){.focus-track figure{flex-basis:calc((100% - 34px)/3)!important}}
+@media(max-width:720px){.story-section{padding:50px 0}.story-layout{grid-template-columns:1fr;gap:23px}.story-image-placeholder{min-height:210px}.focus-gallery{padding:45px 0}.focus-track figure{flex-basis:calc((100% - 17px)/2)!important;height:210px!important;max-height:210px}.focus-track figure img{max-height:210px!important}}
+@media(max-width:460px){.focus-heading{align-items:center;gap:8px}.focus-heading p{font-size:13px}.focus-controls button{height:36px;width:36px;font-size:19px}.focus-track figure{flex:0 0 84%!important;height:235px!important;max-height:235px}.focus-track figure img{max-height:235px!important}.focus-gallery{padding:42px 0}.story-image-placeholder span{font-size:25px}}
