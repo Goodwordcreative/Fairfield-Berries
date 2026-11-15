@@ -1123,3 +1123,69 @@ body {
     padding: 44px 0;
   }
 }
+
+/* Home page: Find Fairfield Berries (mini map) */
+.find-home {
+  background: var(--fb-green);
+  padding: 62px 0;
+}
+.find-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: 44px;
+  align-items: center;
+}
+.find-copy h2 {
+  margin: 0 0 14px;
+}
+.find-address {
+  font:
+    600 clamp(21px, 2vw, 26px) / 1.25 Fredoka,
+    sans-serif;
+  color: var(--fb-blue);
+  margin: 0 0 6px;
+}
+.find-details {
+  margin: 20px 0 0;
+  max-width: 420px;
+}
+.find-details div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid #d3e3cb;
+}
+.find-details dt {
+  font-weight: 700;
+  color: var(--fb-berry);
+}
+.find-details dd {
+  margin: 0;
+  text-align: right;
+}
+.find-details .pending {
+  color: #56606a;
+}
+.find-map iframe {
+  display: block;
+  width: 100%;
+  height: 420px;
+  border: 0;
+  border-radius: 30px;
+  background: #e9eff5;
+}
+@media (max-width: 900px) {
+  .find-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .find-map iframe {
+    height: 320px;
+  }
+}
+@media (max-width: 600px) {
+  .find-home {
+    padding: 44px 0;
+  }
+}
