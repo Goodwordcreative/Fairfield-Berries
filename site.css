@@ -895,3 +895,124 @@ body {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* Gallery */
+.gallery-group {
+  padding: 50px 0;
+}
+.gallery-group:nth-of-type(odd) {
+  background: #fff8fa;
+}
+.gallery-group h2 {
+  margin: 0 0 20px;
+}
+.photo-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-auto-rows: 230px;
+  grid-auto-flow: dense;
+  gap: 14px;
+}
+.photo.wide {
+  grid-column: span 2;
+}
+.photo-grid button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 26px;
+  overflow: hidden;
+  background: #f3e4e9;
+  cursor: zoom-in;
+}
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-grid button:focus-visible,
+.lightbox button:focus-visible {
+  outline: 3px solid var(--fb-blue);
+  outline-offset: 3px;
+}
+
+/* Gallery photo viewer (a native <dialog>, so Esc closes it and focus is handled by the browser) */
+.lightbox {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 20px;
+  border: 0;
+  background: rgba(22, 30, 40, 0.95);
+  color: #fff;
+}
+.lightbox::backdrop {
+  background: rgba(22, 30, 40, 0.6);
+}
+.lightbox figure {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.lightbox img {
+  max-width: 100%;
+  max-height: calc(100svh - 130px);
+  object-fit: contain;
+  border-radius: 14px;
+}
+.lightbox figcaption {
+  font-size: 15px;
+  text-align: center;
+  max-width: 60ch;
+}
+.lightbox button {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 0;
+  background: #fff;
+  color: var(--fb-berry);
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-close {
+  top: 16px;
+  right: 16px;
+}
+.lightbox-prev {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lightbox-next {
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 600px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 170px;
+    gap: 10px;
+  }
+  .lightbox-prev,
+  .lightbox-next {
+    top: auto;
+    bottom: 16px;
+    transform: none;
+  }
+}

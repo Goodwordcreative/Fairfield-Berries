@@ -54,4 +54,34 @@
         "&body=" +
         encodeURIComponent(body);
     });
+
+  // Gallery viewer: tap a photo to see it full size; the arrow buttons, arrow keys and Esc work too
+  const viewer = document.querySelector(".lightbox");
+  const buttons = [...document.querySelectorAll(".photo-grid button")];
+  if (viewer && buttons.length && typeof viewer.showModal === "function") {
+    const img = viewer.querySelector("img");
+    const caption = viewer.querySelector("figcaption");
+    let index = 0;
+    const show = (i) => {
+      index = (i + buttons.length) % buttons.length;
+      const thumb = buttons[index].querySelector("img");
+      img.src = buttons[index].dataset.full;
+      img.alt = thumb.alt;
+      caption.textContent = thumb.alt;
+    };
+    buttons.forEach((button, i) =>
+      button.addEventListener("click", () => {
+        show(i);
+        viewer.showModal();
+      }),
+    );
+    viewer.querySelector(".lightbox-prev").addEventListener("click", () => show(index - 1));
+    viewer.querySelector(".lightbox-next").addEventListener("click", () => show(index + 1));
+    viewer.querySelector(".lightbox-close").addEventListener("click", () => viewer.close());
+    viewer.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") show(index - 1);
+      if (e.key === "ArrowRight") show(index + 1);
+    });
+    viewer.addEventListener("close", () => buttons[index].focus());
+  }
 })();
