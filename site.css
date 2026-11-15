@@ -1097,3 +1097,29 @@ body {
     height: 96px;
   }
 }
+
+/* Home page: Latest from the farm (Facebook feed) */
+.fb-home {
+  background: #fff;
+  padding: 62px 0;
+}
+.fb-home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 500px);
+  gap: 48px;
+  align-items: center;
+}
+.fb-home-copy p {
+  max-width: 46ch;
+}
+@media (max-width: 900px) {
+  .fb-home-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+}
+@media (max-width: 600px) {
+  .fb-home {
+    padding: 44px 0;
+  }
+}
