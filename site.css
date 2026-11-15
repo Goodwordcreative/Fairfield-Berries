@@ -839,3 +839,26 @@ body {
 .focus-hint {
   color: #56606a !important;
 }
+
+/* Home button in the menu: a real link with a house icon, so nobody has to know the logo goes home */
+.site-nav .nav-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.site-nav .nav-home svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+  flex: none;
+}
+@media (max-width: 1200px) {
+  .site-nav {
+    gap: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .site-nav .nav-home {
+    padding: 11px 6px;
+  }
+}
