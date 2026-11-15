@@ -1,0 +1,7 @@
+# Lets search engines read every page. While the site is a preview on GitHub Pages,
+# each page carries <meta name="robots" content="noindex">, which keeps it out of Google.
+User-agent: *
+Allow: /
+
+# At launch, change this to the real domain.
+Sitemap: https://goodwordcreative.github.io/Fairfield-Berries/sitemap.xml
