@@ -1,20 +1,25 @@
 (() => {
+  // Mobile menu: opens and closes the nav, and tells screen readers whether it is open
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.querySelector(".site-nav");
   if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(isOpen));
-      toggle.textContent = isOpen ? "✕" : "☰";
+    const setOpen = (open) => {
+      nav.classList.toggle("open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      toggle.textContent = open ? "✕" : "☰";
+    };
+    toggle.addEventListener("click", () => setOpen(!nav.classList.contains("open")));
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("open")) {
+        setOpen(false);
+        toggle.focus();
+      }
     });
-    nav.querySelectorAll("a").forEach((link) =>
-      link.addEventListener("click", () => {
-        nav.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-        toggle.textContent = "☰";
-      }),
-    );
   }
+
+  // Photo carousels: the arrow buttons scroll one photo at a time
   document.querySelectorAll("[data-carousel]").forEach((button) =>
     button.addEventListener("click", () => {
       const track = document.getElementById(button.dataset.carousel);
@@ -27,6 +32,8 @@
       });
     }),
   );
+
+  // Contact form: opens the visitor's email app with the message filled in
   const form = document.getElementById("contact-message");
   if (form)
     form.addEventListener("submit", (event) => {

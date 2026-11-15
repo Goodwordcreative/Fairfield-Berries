@@ -7,17 +7,28 @@
     <title>Prices | Fairfield Berries</title>
     <link rel="icon" type="image/svg+xml" href="public/logos/fairfield-icon.svg" />
     <link rel="stylesheet" href="styles.css?v=20261113-10" />
-    <link rel="stylesheet" href="site.css?v=5" />
+    <link rel="stylesheet" href="site.css?v=6" />
   </head>
   <body class="option-a inner-page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap header-inner">
-        <a href="index.html" class="site-logo" aria-label="Fairfield Berries home"
-          ><img src="public/logos/fairfield-logo-web.jpg" alt="Fairfield Berries" /></a
-        ><button type="button" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <a href="index.html" class="site-logo"
+          ><img
+            src="public/logos/fairfield-logo-web.jpg"
+            alt="Fairfield Berries home"
+            width="336"
+            height="336" /></a
+        ><button
+          type="button"
+          class="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
           ☰
         </button>
-        <nav class="site-nav" aria-label="Main navigation">
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
           <a class="nav-home" href="index.html"
             ><svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 3.2 2.5 11h2.7v9.3h5.3v-6h3v6h5.3V11h2.7z" /></svg
@@ -49,7 +60,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main">
       <section class="inner-hero">
         <div class="wrap">
           <span class="eyebrow">Fairfield Berries · Wakefield, Tasman</span>

@@ -862,3 +862,25 @@ body {
     padding: 11px 6px;
   }
 }
+
+/* Skip link: hidden until a keyboard user presses Tab, then it jumps past the menu */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 100;
+  background: var(--fb-berry);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.skip-link:focus {
+  top: 12px;
+}
+/* A clear outline for keyboard users on links and buttons */
+.site-nav a:focus-visible,
+.button:focus-visible {
+  outline: 3px solid var(--fb-blue);
+  outline-offset: 3px;
+}
