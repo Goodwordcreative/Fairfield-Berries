@@ -1189,3 +1189,16 @@ body {
     padding: 44px 0;
   }
 }
+
+/* Facebook follow panel: stands in for the live feed until the Page's settings let Facebook show posts */
+.fb-follow {
+  width: 100%;
+  max-width: 500px;
+}
+.fb-follow-name {
+  font:
+    600 24px/1.2 Fredoka,
+    sans-serif;
+  color: var(--fb-blue);
+  margin: 0 0 8px;
+}

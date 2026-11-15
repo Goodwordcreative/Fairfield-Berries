@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles.css?v=20261113-10" />
-    <link rel="stylesheet" href="site.css?v=11" />
+    <link rel="stylesheet" href="site.css?v=12" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -128,6 +128,29 @@
           </div>
           <aside class="blog-feed" aria-labelledby="fb-blog-heading">
             <h2 id="fb-blog-heading">From our Facebook page</h2>
+            <!-- LIVE FEED SWITCHED OFF (16 Nov 2026). Facebook only sends the Page header and no posts for
+                 facebook.com/fairfieldberries, because of a setting on the Page itself (most likely an age or
+                 country restriction). Once Elise fixes that, delete the follow panel below and take the
+                 comment markers off the feed underneath it. -->
+            <div class="social-panel fb-follow">
+              <div class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M22 12A10 10 0 1 0 10.44 21.9v-7.03H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.62.77-1.62 1.56V12h2.76l-.44 2.87h-2.32v7.03A10 10 0 0 0 22 12z"
+                  />
+                </svg>
+              </div>
+              <p class="fb-follow-name">Fairfield Berries on Facebook</p>
+              <p>What's being picked, opening hours and real fruit ice cream news.</p>
+              <a
+                class="button"
+                href="https://www.facebook.com/fairfieldberries"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open our Facebook page</a
+              >
+            </div>
+            <!--
             <div class="fb-feed">
               <div class="fb-feed-frame">
                 <iframe
@@ -151,6 +174,7 @@
                 >.
               </p>
             </div>
+            -->
           </aside>
         </div>
       </section>
