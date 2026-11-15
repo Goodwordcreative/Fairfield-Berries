@@ -832,3 +832,10 @@ body {
 .price-rows > div:last-child {
   border-bottom: 0;
 }
+
+/* Accessibility: these two small grey texts were too faint to read (WCAG needs 4.5:1).
+   #777 on white is 4.48:1; #56606a is 6.3:1 and still reads as a soft grey. */
+.story-note,
+.focus-hint {
+  color: #56606a !important;
+}
