@@ -62,7 +62,14 @@ Search the pages for **"to be confirmed"** to find every gap:
 
 ## The Facebook feed
 
-The home page and blog show the live Facebook Page (`facebook.com/fairfieldberries`) using Facebook's Page Plugin, an `<iframe>`. It updates itself whenever the farm posts on Facebook. Some browsers and ad blockers hide it, so a link to the Facebook page always shows underneath.
+The live feed uses Facebook's Page Plugin (an `<iframe>`), which updates itself whenever the farm posts. **It's switched off for now.** For facebook.com/fairfieldberries, Facebook only sends the Page header and no posts. The same code shows posts for other Pages, so the cause is a setting on the Page itself, most likely an age or country restriction.
+
+Until that's fixed, the home page and blog show a "Fairfield Berries on Facebook" panel with a link to the page. To switch the feed back on, once Elise has checked Settings > Page setup > Age and Country restrictions on the Facebook page:
+
+1. In `index.html` and `blog.html`, find the comment `LIVE FEED SWITCHED OFF`.
+2. Delete the `<div class="social-panel fb-follow">` panel under it.
+3. Remove the `<!--` and `-->` around the `<div class="fb-feed">` block.
+4. Check it shows posts in a browser. Some browsers and ad blockers hide Facebook, so a link to the page always shows underneath.
 
 ## Launch checklist (when the site moves to its real domain)
 
