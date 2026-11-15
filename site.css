@@ -884,3 +884,14 @@ body {
   outline: 3px solid var(--fb-blue);
   outline-offset: 3px;
 }
+
+/* Footer credit */
+.footer-credit {
+  display: block;
+  margin-top: 6px;
+  font-size: 11px;
+}
+.footer-credit a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
