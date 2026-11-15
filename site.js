@@ -55,6 +55,12 @@
         encodeURIComponent(body);
     });
 
+  // Facebook feed: Facebook draws the feed at a fixed width, so match it to the space on screen
+  document.querySelectorAll(".fb-feed-frame iframe").forEach((frame) => {
+    const width = Math.round(Math.min(500, Math.max(180, frame.parentElement.clientWidth)));
+    if (width < 500) frame.src = frame.src.replace(/width=\d+/, "width=" + width);
+  });
+
   // Gallery viewer: tap a photo to see it full size; the arrow buttons, arrow keys and Esc work too
   const viewer = document.querySelector(".lightbox");
   const buttons = [...document.querySelectorAll(".photo-grid button")];
