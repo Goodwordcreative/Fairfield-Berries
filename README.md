@@ -1,6 +1,6 @@
 # Fairfield Berries
 
-The website for Fairfield Berries, a pick your own berry farm and farm shop at 292 Wakefield Kohatu Highway, just south of Wakefield in Tasman. It's plain HTML, CSS and a little JavaScript, with no build step. Open any `.html` file in a browser and it works.
+The website for Fairfield Berries, a pick your own berry farm and farm shop at 292 Wakefield-Kohatu Highway, Wai-iti, just south of Wakefield in Tasman. It's plain HTML, CSS and a little JavaScript, with no build step. Open any `.html` file in a browser and it works.
 
 Preview: https://goodwordcreative.github.io/Fairfield-Berries/
 
@@ -37,7 +37,7 @@ Every page has:
 - **Open Graph tags** (`og:title`, `og:image` and so on), which control the preview card when someone shares the link on Facebook or in Messenger. The share photo is `public/images/og-fairfield-berries.jpg` (1200 × 630).
 - **One `<h1>`**, then `<h2>`s for sections and `<h3>`s inside those. Don't skip levels.
 - **Alt text on every photo**, describing what's in it. Decorative artwork has `alt=""`.
-- **Structured data** (the `application/ld+json` blocks). The home page and Find Us describe the business (name, address, phone, socials) in a format Google reads directly. Inner pages carry a breadcrumb. When Elise confirms the opening hours, add them here too (ask Josh).
+- **Structured data** (the `application/ld+json` blocks). The home page and Find Us describe the business (name, address, phone, socials) in a format Google reads directly. Inner pages carry a breadcrumb. The opening hours are in there too (`openingHoursSpecification`), with the date each season starts and ends. Update them in both index.html and find-us.html when the hours change.
 - **A skip link** ("Skip to content") for keyboard users. Press Tab on any page to see it.
 
 The site also has `sitemap.xml` (a list of every page for Google) and `robots.txt`.
