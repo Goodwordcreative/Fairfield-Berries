@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Every public page. Add a line for each new blog post. At launch, change the domain. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/</loc><lastmod>2026-11-16</lastmod><priority>1.0</priority></url>
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/pick-your-own.html</loc><lastmod>2026-11-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/our-story.html</loc><lastmod>2026-11-16</lastmod><priority>0.7</priority></url>
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/prices.html</loc><lastmod>2026-11-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/farm-shop.html</loc><lastmod>2026-11-16</lastmod><priority>0.8</priority></url>
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/gallery.html</loc><lastmod>2026-11-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/blog.html</loc><lastmod>2026-11-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/find-us.html</loc><lastmod>2026-11-16</lastmod><priority>0.9</priority></url>
+  <url><loc>https://goodwordcreative.github.io/Fairfield-Berries/faq.html</loc><lastmod>2026-11-16</lastmod><priority>0.6</priority></url>
+</urlset>

@@ -1,30 +1,93 @@
 (() => {
-  const toggle=document.querySelector('.menu-toggle');
-  const nav=document.querySelector('.site-nav');
-  if(toggle&&nav){
-    toggle.addEventListener('click',()=>{
-      const isOpen=nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded',String(isOpen));
-      toggle.textContent=isOpen?'✕':'☰';
+  // Mobile menu: opens and closes the nav, and tells screen readers whether it is open
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".site-nav");
+  if (toggle && nav) {
+    const setOpen = (open) => {
+      nav.classList.toggle("open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      toggle.textContent = open ? "✕" : "☰";
+    };
+    toggle.addEventListener("click", () => setOpen(!nav.classList.contains("open")));
+    nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => setOpen(false)));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("open")) {
+        setOpen(false);
+        toggle.focus();
+      }
     });
-    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
-      nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';
-    }));
   }
-  document.querySelectorAll('[data-carousel]').forEach(button=>button.addEventListener('click',()=>{
-    const track=document.getElementById(button.dataset.carousel);
-    const card=track?.querySelector('figure');
-    if(!card)return;
-    const gap=parseFloat(getComputedStyle(track).gap)||17;
-    track.scrollBy({left:Number(button.dataset.direction)*(card.getBoundingClientRect().width+gap),behavior:'smooth'});
-  }));
-  const form=document.getElementById('contact-message');
-  if(form) form.addEventListener('submit',event=>{
-    event.preventDefault();
-    if(!form.reportValidity())return;
-    const data=new FormData(form);
-    const subject='Fairfield Berries website enquiry';
-    const body=['Name: '+data.get('name'),'Email: '+data.get('email'),'','Message:',data.get('message')].join('\n');
-    window.location.href='mailto:fairfieldberries@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+
+  // Photo carousels: the arrow buttons scroll one photo at a time
+  document.querySelectorAll("[data-carousel]").forEach((button) =>
+    button.addEventListener("click", () => {
+      const track = document.getElementById(button.dataset.carousel);
+      const card = track?.querySelector("figure");
+      if (!card) return;
+      const gap = parseFloat(getComputedStyle(track).gap) || 17;
+      track.scrollBy({
+        left: Number(button.dataset.direction) * (card.getBoundingClientRect().width + gap),
+        behavior: "smooth",
+      });
+    }),
+  );
+
+  // Contact form: opens the visitor's email app with the message filled in
+  const form = document.getElementById("contact-message");
+  if (form)
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const data = new FormData(form);
+      const subject = "Fairfield Berries website enquiry";
+      const body = [
+        "Name: " + data.get("name"),
+        "Email: " + data.get("email"),
+        "",
+        "Message:",
+        data.get("message"),
+      ].join("\n");
+      window.location.href =
+        "mailto:fairfieldberries@gmail.com?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+    });
+
+  // Facebook feed: Facebook draws the feed at a fixed width, so match it to the space on screen
+  document.querySelectorAll(".fb-feed-frame iframe").forEach((frame) => {
+    const width = Math.round(Math.min(500, Math.max(180, frame.parentElement.clientWidth)));
+    if (width < 500) frame.src = frame.src.replace(/width=\d+/, "width=" + width);
   });
+
+  // Gallery viewer: tap a photo to see it full size; the arrow buttons, arrow keys and Esc work too
+  const viewer = document.querySelector(".lightbox");
+  const buttons = [...document.querySelectorAll(".photo-grid button")];
+  if (viewer && buttons.length && typeof viewer.showModal === "function") {
+    const img = viewer.querySelector("img");
+    const caption = viewer.querySelector("figcaption");
+    let index = 0;
+    const show = (i) => {
+      index = (i + buttons.length) % buttons.length;
+      const thumb = buttons[index].querySelector("img");
+      img.src = buttons[index].dataset.full;
+      img.alt = thumb.alt;
+      caption.textContent = thumb.alt;
+    };
+    buttons.forEach((button, i) =>
+      button.addEventListener("click", () => {
+        show(i);
+        viewer.showModal();
+      }),
+    );
+    viewer.querySelector(".lightbox-prev").addEventListener("click", () => show(index - 1));
+    viewer.querySelector(".lightbox-next").addEventListener("click", () => show(index + 1));
+    viewer.querySelector(".lightbox-close").addEventListener("click", () => viewer.close());
+    viewer.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") show(index - 1);
+      if (e.key === "ArrowRight") show(index + 1);
+    });
+    viewer.addEventListener("close", () => buttons[index].focus());
+  }
 })();
