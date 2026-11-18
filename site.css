@@ -1157,6 +1157,7 @@ body {
   border-bottom: 1px solid #d3e3cb;
 }
 .find-details dt {
+  flex: none;
   font-weight: 700;
   color: var(--fb-berry);
 }
