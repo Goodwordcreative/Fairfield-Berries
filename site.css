@@ -164,3 +164,6 @@ body{overflow-x:hidden}
 
 /* Accessible price lists */
 .price-rows{margin:0 0 12px;font-variant-numeric:tabular-nums}.price-rows>div{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid #eedee4}.price-rows dt{flex:1;min-width:0}.price-rows dd{margin:0;text-align:right;font-weight:700;white-space:nowrap}.price-rows>div:last-child{border-bottom:0}
+
+/* Compact shop menu */
+.flavour-chips,.icecream-options{list-style:none;padding:0;margin:12px 0 24px;display:flex;flex-wrap:wrap;gap:8px}.flavour-chips li,.icecream-options li{margin:0;padding:7px 13px;border-radius:10px;background:#fff1f5;border:1px solid #efd6df;font-size:0.9em}.icecream-options li{background:#edf4fb;border-color:#dbe7f1}.anchor-offset #local-stockists{scroll-margin-top:120px}
