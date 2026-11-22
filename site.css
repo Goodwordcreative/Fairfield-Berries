@@ -315,3 +315,33 @@ body{overflow-x:hidden}
 .price-card-actions .button{max-width:100%;text-align:center}
 #icecream{scroll-margin-top:110px}
 @media(max-width:560px){.price-card-actions .button{width:auto}}
+
+/* Home content and mobile readability refinements */
+.pyo-update-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:9px}
+.pyo-update-links a{font-weight:750}
+.pyo-update-links .external-social-link{gap:5px}
+.pyo-update-links .external-instagram-icon{height:18px;width:18px}
+.mobile-story-label,.home-mobile-hours,.berries-mobile-facts{display:none}
+.shop-home-link{display:inline}
+.shop-home-link a{font-weight:750}
+@media(max-width:720px){
+ .option-a .story-section .story-description,.option-a .story-section .story-note{display:none}
+ .option-a .story-section .story-text{padding-bottom:14px}
+ .option-a .story-section .story-text .feature-extra{margin-top:8px}
+ .option-a .story-section .story-text .feature-extra .button{font-weight:700;font-size:15px}
+ .mobile-story-label{display:inline}
+ .desktop-story-label{display:none}
+ .focus-gallery .focus-controls{display:none!important}
+ .focus-gallery .focus-heading{display:block}
+ .shop-home-link{display:block;margin-top:7px!important}
+ .home-mobile-hours{display:block;margin:14px 0}
+ .visit-simple .visit-summary-copy>.hours-table-wrap,.visit-simple .visit-summary-copy>.season-note{display:none!important}
+ .visit-simple .home-mobile-hours .button{width:auto;font-size:15px}
+ .offsite-label{display:none!important}
+ .berries-description{display:none}
+ .berries-mobile-facts{display:block;list-style:disc;margin:13px 0 20px;padding-left:23px;line-height:1.5}
+ .berries-mobile-facts li{padding:3px 0}
+ .business-contact>strong,.business-contact>span{display:block}
+ .business-contact>span{margin-top:3px}
+ .pyo-update-links{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+}
