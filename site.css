@@ -308,3 +308,10 @@ body{overflow-x:hidden}
 #local .split-photo{object-position:center 30%}
 @media(max-width:900px){.site-nav{font-size:14px}}
 @media(max-width:700px){.inner-hero h1{font-size:clamp(34px,8vw,46px)!important}.offsite-label{font-size:12px}.local-food-heading{margin-top:32px!important}}
+
+/* 22 Nov layout corrections */
+.faq-contact-actions{display:flex!important;justify-content:center!important;align-items:center!important;width:100%;margin-top:24px}
+.price-card-actions{display:flex;justify-content:flex-start;align-items:center;margin-top:22px}
+.price-card-actions .button{max-width:100%;text-align:center}
+#icecream{scroll-margin-top:110px}
+@media(max-width:560px){.price-card-actions .button{width:auto}}
