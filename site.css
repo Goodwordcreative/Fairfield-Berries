@@ -272,3 +272,39 @@ body{overflow-x:hidden}
   .stockists-grid{grid-template-columns:1fr 1fr;gap:6px}
   .hours-table tbody th{width:41%}
 }
+
+/* Final visual consistency review */
+.site-nav{font-size:clamp(13px,1.05vw,16px);gap:clamp(12px,1.15vw,22px)}
+.site-nav .nav-social{width:37px;height:37px}
+.nav-social svg{width:25px;height:25px}
+.inner-hero h1{font-family:inherit!important;font-weight:800!important;letter-spacing:-.035em!important;font-size:clamp(38px,4.6vw,62px)!important}
+.inner-hero .eyebrow{letter-spacing:.12em}
+.pyo-hero .wrap>div>p{max-width:580px;line-height:1.55}
+.pyo-hero .wrap>div>p strong{color:#a92d50;font-size:1.03em}
+.offsite-label{font-size:.72em;font-weight:600;opacity:.82;white-space:nowrap}
+.external-social-link{display:inline-flex!important;align-items:center;gap:8px;flex-wrap:wrap}
+.external-instagram-icon{width:20px;height:20px;flex:none;fill:currentColor;vertical-align:middle}
+.price-photo-card:first-child .price-photo img{object-position:center 82%!important}
+#icecream-prices .price-photo img{object-position:center 18%!important}
+.price-photo-card:nth-child(8) .price-photo img{object-position:center 78%!important}
+.offer-card:first-child .offer-photo img,.detail-nav a:first-child img{object-position:center 79%!important}
+.offer-photo.icecream-photo img{object-position:center 20%!important}
+#icecream .icecream-prices{margin:9px 0 13px;line-height:1.7}
+#icecream .option-note{margin-top:17px}
+#icecream h3{font-weight:900!important}
+#icecream .flavour-chips{margin-bottom:18px}
+#icecream .flavour-chips li{font-weight:750!important;border:1px solid rgba(0,0,0,.1)}
+#icecream .flavour-chips li:nth-child(1){background:#f0d7e8;color:#693354}
+#icecream .flavour-chips li:nth-child(2){background:#f9dbe3;color:#9d2249}
+#icecream .flavour-chips li:nth-child(3){background:#ffe5e9;color:#aa294c}
+#icecream .flavour-chips li:nth-child(4){background:#e7d2e0;color:#653858}
+#icecream .flavour-chips li:nth-child(5){background:#fff0b3;color:#785200}
+#icecream .flavour-chips li:nth-child(6){background:#e1eac2;color:#3a6234}
+#icecream .flavour-chips li:nth-child(7){background:#e9d5c6;color:#633a24}
+#icecream .flavour-chips li:nth-child(8){background:#e8d3c7;color:#613727}
+#icecream .flavour-chips li:nth-child(9){background:#fff1c2;color:#765516}
+#icecream .flavour-chips li:nth-child(10){background:#dfc1d1;color:#66324c}
+.local-food-heading{margin-top:48px!important;padding-top:12px}
+#local .split-photo{object-position:center 30%}
+@media(max-width:900px){.site-nav{font-size:14px}}
+@media(max-width:700px){.inner-hero h1{font-size:clamp(34px,8vw,46px)!important}.offsite-label{font-size:12px}.local-food-heading{margin-top:32px!important}}
