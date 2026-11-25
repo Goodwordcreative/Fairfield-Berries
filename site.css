@@ -392,3 +392,6 @@ body{overflow-x:hidden}
   #opening-hours .winter-note{margin-top:19px!important;margin-bottom:22px!important}
   #opening-hours .social-hint{margin-top:22px!important}
 }
+
+/* Space between public holiday notice and winter frozen berry notice on desktop */
+@media(min-width:721px){#opening-hours .season-note{margin-bottom:24px!important}#opening-hours .winter-note{margin-top:24px!important}}
