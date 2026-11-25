@@ -164,3 +164,234 @@ body{overflow-x:hidden}
 
 /* Accessible price lists */
 .price-rows{margin:0 0 12px;font-variant-numeric:tabular-nums}.price-rows>div{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid #eedee4}.price-rows dt{flex:1;min-width:0}.price-rows dd{margin:0;text-align:right;font-weight:700;white-space:nowrap}.price-rows>div:last-child{border-bottom:0}
+
+/* Photo-led homepage visit section */
+.visit-summary{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:36px;align-items:center;text-align:left}.visit-summary-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px}.visit-summary-copy h2,.visit-summary-copy h3,.visit-summary-copy p{text-align:left;margin-left:0;margin-right:0}.visit-summary-copy .actions{justify-content:flex-start;align-items:center;flex-wrap:wrap}.visit-summary-copy .actions .inline-link{font-size:0.9em}@media(max-width:700px){.visit-summary{grid-template-columns:1fr;gap:20px}.visit-summary-photo{aspect-ratio:16/9}}
+
+/* Compact shop menu */
+.flavour-chips,.icecream-options{list-style:none;padding:0;margin:12px 0 24px;display:flex;flex-wrap:wrap;gap:8px}.flavour-chips li,.icecream-options li{margin:0;padding:7px 13px;border-radius:10px;background:#fff1f5;border:1px solid #efd6df;font-size:0.9em}.icecream-options li{background:#edf4fb;border-color:#dbe7f1}.anchor-offset #local-stockists{scroll-margin-top:120px}
+
+/* Price page image cards */
+.price-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.price-photo-grid .price-photo-card{min-width:0;padding:16px}
+.price-photo{aspect-ratio:3/2;overflow:hidden;border-radius:12px;background:#f4e8ea;margin-bottom:16px}
+.price-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.price-photo-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#76535f;text-align:center;font-size:14px;border:1px dashed #c9a8b4}
+.price-photo-card h3{margin:0 0 8px}
+.price-photo-card .price-rows dd{white-space:normal}
+.price-feature-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:24px;align-items:center}
+.price-feature-card .price-photo{margin:0}
+.price-feature-copy{min-width:0}
+@media(max-width:850px){.price-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.price-photo-grid,.price-feature-card{grid-template-columns:1fr}.price-feature-card{gap:16px}}
+
+/* Compact social callouts and story chapters */
+.social-panel{padding:20px 24px;border-radius:18px;display:grid;grid-template-columns:36px minmax(0,1fr) auto;align-items:center;gap:8px 16px;text-align:left}.social-panel .social-icon{grid-row:1/3;width:32px;height:32px;margin:0}.social-panel .social-icon svg{width:32px;height:32px;margin:0}.social-panel h2{grid-column:2;margin:0;font-size:clamp(20px,2.2vw,26px)}.social-panel p{grid-column:2;margin:0;max-width:65ch;font-size:0.9em}.social-panel .button{grid-column:3;grid-row:1/3;padding:10px 16px;font-size:14px}.story-chapters{display:grid;gap:36px;margin-top:24px}.story-chapter{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:center}.story-chapter img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}.story-chapter p{max-width:65ch}.inner-hero{position:relative;isolation:isolate}.inner-hero::after{content:"";position:absolute;right:4%;top:12%;width:clamp(55px,9vw,110px);aspect-ratio:1;background:url("public/images/boysenberry-logo-art.svg") center/contain no-repeat;opacity:.12;z-index:-1;pointer-events:none}@media(min-width:901px){.page-decor{display:block;width:clamp(48px,6vw,90px);opacity:.11}}@media(max-width:700px){.social-panel{grid-template-columns:28px minmax(0,1fr);padding:16px;gap:8px 12px}.social-panel .social-icon{width:26px;height:26px;grid-row:1/2}.social-panel .social-icon svg{width:26px;height:26px}.social-panel p{grid-column:1/-1}.social-panel .button{grid-column:1/-1;grid-row:auto;justify-self:start}.story-chapter{grid-template-columns:1fr;gap:14px}.story-chapter img{order:2}.story-chapters{gap:22px}}
+
+/* November visual review: page titles, tables, PYO, photography and shop */
+.inner-hero{padding:48px 0 45px}
+.inner-hero h1{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:750;letter-spacing:-.045em;font-size:clamp(36px,4.4vw,56px);line-height:1.08}
+.hours-table-wrap{overflow-x:auto;border:1px solid #efdae1;border-radius:18px;background:#fff;box-shadow:0 6px 20px rgba(45,65,86,.04)}
+.hours-table{border-collapse:collapse;width:100%;text-align:left;font-size:clamp(14px,1.14vw,16px);line-height:1.4}
+.hours-table caption{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.hours-table thead{background:#eaf3fb;color:#315779}
+.hours-table th,.hours-table td{padding:13px 16px;vertical-align:top}
+.hours-table tbody tr:not(:last-child)>*{border-bottom:1px solid #f0e1e5}
+.hours-table tbody tr:nth-child(even){background:#fff9fb}
+.hours-table tbody th{font-weight:750;width:41%;color:#355779}
+.hours-table tbody td strong{font-weight:750}
+.hours-table td small{display:block;color:#697685;margin-top:3px}
+.season-note,.winter-note{margin:11px 0 0;max-width:none!important;font-size:.92em;line-height:1.5}
+.season-note strong{color:#a92d50}
+.winter-note{background:#f3f7ef;border-left:3px solid #81a77d;padding:10px 13px;border-radius:5px}
+.winter-note a{font-weight:700;color:#a92d50;text-decoration:underline}
+.visit-summary{grid-template-columns:minmax(0,.85fr) minmax(0,1.4fr);align-items:start}
+.visit-summary-photo{position:sticky;top:115px;aspect-ratio:3/4;max-height:560px}
+.visit-summary-copy .hours-table{font-size:14px}
+.visit-summary-copy .hours-table th,.visit-summary-copy .hours-table td{padding:10px 12px}
+.visit-summary-copy .hours-table tbody th{width:37%}
+.visit-summary-copy h3{margin-bottom:12px}
+.opening-section .section-heading{text-align:left}
+.opening-section .section-heading p{margin-left:0}
+.opening-section .hours-table-wrap{max-width:980px}
+.social-hint{margin:16px 0 32px}
+.social-hint a{color:#a92d50;font-weight:700}
+.contact-panels{display:grid;grid-template-columns:1fr 1.25fr;gap:22px;align-items:start}
+.contact-section{padding:18px 0;border-top:1px solid #f0dce4}
+.contact-section h3{font-size:clamp(21px,2vw,26px);margin-bottom:10px}
+.contact-section p{line-height:1.52}
+.contact-section .button{margin-top:10px}
+.compact-facts{padding-left:1.25em;margin:9px 0 15px;line-height:1.55}
+.compact-facts li{margin:5px 0}
+.compact-facts a{color:#a92d50;text-decoration:underline}
+.contact-info{padding:26px}
+.contact-info .contact-section:last-child{padding-bottom:0}
+.pyo-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.85fr);align-items:center;gap:38px}
+.pyo-hero-photo{width:100%;height:280px;object-fit:cover;object-position:center 42%;border-radius:22px;box-shadow:0 12px 30px rgba(45,65,86,.12)}
+.price-photo img{object-fit:cover}
+.story-chapter{grid-template-columns:minmax(0,1.25fr) minmax(0,.9fr);gap:30px;align-items:center}
+.story-chapter:nth-child(2){grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr)}
+.story-chapter img{height:270px;aspect-ratio:auto;object-fit:cover;border-radius:18px}
+.story-chapter p{line-height:1.56;margin:10px 0}
+.story-intro{align-items:center}
+.story-intro .story-photo img,.story-intro .story-farm-photo img{max-height:270px;object-fit:cover}
+#icecream .split{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start;gap:30px}
+#icecream h3{font-size:clamp(22px,2.3vw,29px);font-weight:850;margin:19px 0 10px}
+#icecream .flavour-chips{margin:8px 0 12px}
+#icecream .icecream-options{margin:8px 0 14px}
+#icecream .option-note{margin-top:9px;font-size:14px;background:#fff4f7;border-radius:9px;padding:9px 12px}
+.shop-photo-quad{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:10px;height:435px;align-self:center}
+.shop-photo-quad img{width:100%;height:100%;min-width:0;min-height:0;object-fit:cover;border-radius:14px}
+.shop-photo-quad img:first-child{object-position:center 35%}
+.stockists-panel{background:#fff;border:1px solid #f0dce4;border-radius:18px;padding:23px}
+.stockists-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 14px;list-style:none;margin:0;padding:0}
+.stockists-grid li{padding:9px 9px 9px 14px;border-radius:9px;background:#fff6f9;border-left:3px solid #e4a1b4;font-size:14px;line-height:1.35;overflow-wrap:anywhere}
+.food-grid{columns:2;column-gap:30px}
+.food-grid li{break-inside:avoid;margin-bottom:8px}
+@media(max-width:1000px){
+  .stockists-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .shop-photo-quad{height:350px}
+  .contact-panels{grid-template-columns:1fr}
+  .visit-summary{grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);gap:22px}
+}
+@media(max-width:700px){
+  .inner-hero h1{font-size:clamp(33px,8vw,43px)}
+  .visit-summary,.pyo-hero-grid,#icecream .split,.story-chapter,.story-chapter:nth-child(2){grid-template-columns:1fr}
+  .visit-summary-photo{position:static;aspect-ratio:16/9;height:auto;max-height:none}
+  .hours-table{font-size:14px}
+  .hours-table th,.hours-table td{padding:10px}
+  .pyo-hero-photo{height:220px}
+  .story-chapter img{height:auto;aspect-ratio:16/10;order:2}
+  .shop-photo-quad{height:auto;aspect-ratio:1.2}
+  .stockists-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stockists-panel{padding:13px}
+  .stockists-grid li{font-size:13px;padding:8px}
+  .food-grid{columns:1}
+}
+@media(max-width:430px){
+  .stockists-grid{grid-template-columns:1fr 1fr;gap:6px}
+  .hours-table tbody th{width:41%}
+}
+
+/* Final visual consistency review */
+.site-nav{font-size:clamp(13px,1.05vw,16px);gap:clamp(12px,1.15vw,22px)}
+.site-nav .nav-social{width:37px;height:37px}
+.nav-social svg{width:25px;height:25px}
+.inner-hero h1{font-family:Fredoka,"Trebuchet MS",sans-serif!important;font-weight:600!important;letter-spacing:-.035em!important;font-size:clamp(38px,4.6vw,62px)!important}
+.inner-hero .eyebrow{letter-spacing:.12em}
+.pyo-hero .wrap>div>p{max-width:580px;line-height:1.55}
+.pyo-hero .wrap>div>p strong{color:#a92d50;font-size:1.03em}
+.offsite-label{font-size:.72em;font-weight:600;opacity:.82;white-space:nowrap}
+.external-social-link{display:inline-flex!important;align-items:center;gap:8px;flex-wrap:wrap}
+.external-instagram-icon{width:20px;height:20px;flex:none;fill:currentColor;vertical-align:middle}
+.price-photo-card:first-child .price-photo img{object-position:center 82%!important}
+#icecream-prices .price-photo img{object-position:center 18%!important}
+.price-photo-card:nth-child(8) .price-photo img{object-position:center 78%!important}
+.offer-card:first-child .offer-photo img,.detail-nav a:first-child img{object-position:center 79%!important}
+.offer-photo.icecream-photo img{object-position:center 20%!important}
+#icecream .icecream-prices{margin:9px 0 13px;line-height:1.7}
+#icecream .option-note{margin-top:17px}
+#icecream h3{font-weight:900!important}
+#icecream .flavour-chips{margin-bottom:18px}
+#icecream .flavour-chips li{font-weight:750!important;border:1px solid rgba(0,0,0,.1)}
+#icecream .flavour-chips li:nth-child(1){background:#f0d7e8;color:#693354}
+#icecream .flavour-chips li:nth-child(2){background:#f9dbe3;color:#9d2249}
+#icecream .flavour-chips li:nth-child(3){background:#ffe5e9;color:#aa294c}
+#icecream .flavour-chips li:nth-child(4){background:#e7d2e0;color:#653858}
+#icecream .flavour-chips li:nth-child(5){background:#fff0b3;color:#785200}
+#icecream .flavour-chips li:nth-child(6){background:#e1eac2;color:#3a6234}
+#icecream .flavour-chips li:nth-child(7){background:#e9d5c6;color:#633a24}
+#icecream .flavour-chips li:nth-child(8){background:#e8d3c7;color:#613727}
+#icecream .flavour-chips li:nth-child(9){background:#fff1c2;color:#765516}
+#icecream .flavour-chips li:nth-child(10){background:#dfc1d1;color:#66324c}
+.local-food-heading{margin-top:48px!important;padding-top:12px}
+#local .split-photo{object-position:center 30%}
+@media(max-width:900px){.site-nav{font-size:14px}}
+@media(max-width:700px){.inner-hero h1{font-size:clamp(34px,8vw,46px)!important}.offsite-label{font-size:12px}.local-food-heading{margin-top:32px!important}}
+
+/* 22 Nov layout corrections */
+.faq-contact-actions{display:flex!important;justify-content:center!important;align-items:center!important;width:100%;margin-top:24px}
+.price-card-actions{display:flex;justify-content:flex-start;align-items:center;margin-top:22px}
+.price-card-actions .button{max-width:100%;text-align:center}
+#icecream{scroll-margin-top:110px}
+@media(max-width:560px){.price-card-actions .button{width:auto}}
+
+/* Home content and mobile readability refinements */
+.pyo-update-links{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:9px}
+.pyo-update-links a{font-weight:750}
+.pyo-update-links .external-social-link{gap:5px}
+.pyo-update-links .external-instagram-icon{height:18px;width:18px}
+.mobile-story-label,.home-mobile-hours,.berries-mobile-facts{display:none}
+.shop-home-link{display:inline}
+.shop-home-link a{font-weight:750}
+@media(max-width:720px){
+ .option-a .story-section .story-description,.option-a .story-section .story-note{display:none}
+ .option-a .story-section .story-text{padding-bottom:14px}
+ .option-a .story-section .story-text .feature-extra{margin-top:8px}
+ .option-a .story-section .story-text .feature-extra .button{font-weight:700;font-size:15px}
+ .mobile-story-label{display:inline}
+ .desktop-story-label{display:none}
+ .focus-gallery .focus-controls{display:none!important}
+ .focus-gallery .focus-heading{display:block}
+ .shop-home-link{display:block;margin-top:7px!important}
+ .home-mobile-hours{display:block;margin:14px 0}
+ .visit-simple .visit-summary-copy>.hours-table-wrap,.visit-simple .visit-summary-copy>.season-note{display:none!important}
+ .visit-simple .home-mobile-hours .button{width:auto;font-size:15px}
+ .offsite-label{display:none!important}
+ .berries-description{display:none}
+ .berries-mobile-facts{display:block;list-style:disc;margin:13px 0 20px;padding-left:23px;line-height:1.5}
+ .berries-mobile-facts li{padding:3px 0}
+ .business-contact>strong,.business-contact>span{display:block}
+ .business-contact>span{margin-top:3px}
+ .pyo-update-links{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+}
+
+/* Mobile refinement: compact actions and readable sections */
+.local-products-mobile{display:none}
+@media(max-width:720px){
+  .option-a .focus-pyo .pyo-update-links{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px!important;
+    align-items:stretch!important;
+    width:100%;
+  }
+  .option-a .focus-pyo .pyo-update-links>a{
+    display:inline-flex!important;
+    justify-content:center;
+    align-items:center;
+    gap:4px;
+    text-align:center;
+    padding:11px 6px;
+    font-size:clamp(10px,2.9vw,13px);
+    line-height:1.25;
+    font-weight:750;
+    min-width:0;
+    min-height:48px;
+    border-radius:16px;
+    border:2px solid var(--fb-berry);
+    text-decoration:none!important;
+    color:var(--fb-berry);
+    background:#fff7f9;
+    white-space:normal;
+  }
+  .option-a .focus-pyo .pyo-update-links>a:last-child{
+    color:#fff;
+    background:var(--fb-berry);
+  }
+  .option-a .focus-pyo .pyo-update-links .external-instagram-icon{width:15px;height:15px;flex-shrink:0}
+  .option-a .visit-simple .winter-note{margin-bottom:25px!important;line-height:1.65}
+  .option-a .visit-simple .visit-summary-copy>.actions{margin-top:22px!important}
+  .story-visit-actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px!important}
+  .story-visit-actions .button{min-width:0;width:100%;padding:13px 5px!important;font-size:clamp(11px,3vw,14px);line-height:1.3;text-align:center;display:flex;align-items:center;justify-content:center}
+  #local .local-products-desktop{display:none}
+  #local .local-products-mobile{display:block;padding-left:22px;margin:12px 0 17px;line-height:1.55}
+  #local .local-products-mobile li{margin:0 0 8px}
+  #local #local-stockists{margin-top:32px!important}
+  #opening-hours .season-note{margin-bottom:19px!important}
+  #opening-hours .winter-note{margin-top:19px!important;margin-bottom:22px!important}
+  #opening-hours .social-hint{margin-top:22px!important}
+}
+
+/* Space between public holiday notice and winter frozen berry notice on desktop */
+@media(min-width:721px){#opening-hours .season-note{margin-bottom:24px!important}#opening-hours .winter-note{margin-top:24px!important}}
